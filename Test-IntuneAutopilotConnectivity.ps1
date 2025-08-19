@@ -30,7 +30,7 @@
 .EXAMPLE
     .\Test-IntuneAutopilotConnectivity.ps1 -JsonPath C:\Temp\IntuneConnectivity.json -TimeoutMs 7000 -Retries 2
 .NOTES
-    Author: Intune Network Connectivity Validator
+    Author: Biju George - Technical Consultant 
     Version: 1.0
     Requires: PowerShell 5.1 or higher
     Compatible with: Windows 10/11, Windows Server 2016+
@@ -64,14 +64,15 @@ param(
 $ScriptName = "Test-IntuneAutopilotConnectivity"
 $DefaultOutputPath = "C:\ProgramData\IntuneConnectivity-$(Get-Date -Format 'yyyyMMdd-HHmmss').csv"
 $CriticalEndpoints = @(
-    "dm.microsoft.com",
     "manage.microsoft.com", 
     "enterpriseregistration.windows.net",
     "device.login.microsoftonline.com",
     "login.microsoftonline.com",
     "ztd.dds.microsoft.com",
     "cs.dds.microsoft.com",
-    "www.msftconnecttest.com"
+    "www.msftconnecttest.com",
+    "graph.microsoft.com",
+    "portal.azure.com"
 )
 
 # Global variables for results

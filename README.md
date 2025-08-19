@@ -81,7 +81,6 @@ cd IntuneNetworkCheck
 
 The script automatically tests these critical Microsoft endpoints:
 
-- **dm.microsoft.com** - Device Management
 - **manage.microsoft.com** - Microsoft Management Portal
 - **enterpriseregistration.windows.net** - Azure AD Registration
 - **device.login.microsoftonline.com** - Device Authentication
@@ -89,6 +88,8 @@ The script automatically tests these critical Microsoft endpoints:
 - **ztd.dds.microsoft.com** - Zero Touch Deployment
 - **cs.dds.microsoft.com** - Configuration Services
 - **www.msftconnecttest.com** - Microsoft Connectivity Test
+- **graph.microsoft.com** - Microsoft Graph API
+- **portal.azure.com** - Azure Portal
 
 ## 📊 Output Formats
 
